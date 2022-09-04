@@ -11,4 +11,4 @@ def test_search_text_in_google(seting_window_browser):
 def test_2_search_text_in_google(seting_window_browser):
     browser.open('https://google.com/ncr')
     browser.element('[name=q]').type('selene python').press_enter()
-    browser.element('[class=v7W49e]').should(have.text('C++ - User-oriented Web UI browser tests in Python'))
+    browser.element('[class=v7W49e]').should(have.no.text('C++'))
