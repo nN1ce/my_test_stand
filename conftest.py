@@ -6,7 +6,7 @@ import pytest
 
 @pytest.fixture(scope="session", autouse=True)
 def seting_window_browser():
-    browser.config.window_height = 1080
-    browser.config.window_width = 1920
+    browser.config.window_height = 480
+    browser.config.window_width = 640
     yield
     browser.close()

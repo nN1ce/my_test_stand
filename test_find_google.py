@@ -3,5 +3,9 @@ from selene import have, be
 def test_find_google():
     browser.open('https://google.com/ncr')
     browser.element('[name=q]').type('mvideo').press_enter()
-    browser.find.test('М.Видео - интернет-магазин цифровой и')
-        # should(have.text('Selene - User-oriented Web UI browser tests in Python'))
+    browser.element('[class=BYM4Nd').should(have.text('Официальный сайт сети магазинов бытовой'))
+
+def test_2_find_ya():
+    browser.open('https://ya.ru')
+    browser.element('[id=text]').type('dns').press_enter()
+    browser.element('[id="search-result"]').should(have.no.text('Официальный сайт сети магазинов бытовой'))
