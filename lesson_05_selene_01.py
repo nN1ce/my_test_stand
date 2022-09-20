@@ -10,6 +10,7 @@ def test_submit_user_details():
     browser.element('.main-header').should(have.text('Text Box'))
     browser.all('#userFrom input, #userForm textarea').should(have.size(2))
 
-    browser.element('#userName').type('Evgen')
-    browser.element('#submit').press_enter()
-    browser.close()
+    # browser.element('#userName').type('Evgen')
+    # browser.element('#submit').press_enter()
+    # browser.close()
+
